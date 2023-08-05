@@ -1,0 +1,199 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+
+
+
+/* Top */
+
+.top{
+    min-height: 55vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1521489871110-81dc5a61dbda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80); 
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.overlay{
+    position: relative;
+    min-height: inherit;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.182);
+}
+
+#text{
+    width: 100vw;
+    position: absolute;
+    bottom: 20%;
+    padding: 0 7vw;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#text h1{
+    font-weight: 500;
+    font-size: 6vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.rightText{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightText p{
+    width: 40%;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+/* bottom */
+
+.bottom{
+    width: 100%;
+    min-height: 45vh;
+    display: flex;
+    overflow: auto;
+}
+
+.box-1{
+    width: 20%;
+    min-height: 45vh;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.box-1 p{
+    margin-top: 25px;
+}
+.box-2{
+    width: 30%;
+    min-height: 45vh;
+    background-image: url(https://images.unsplash.com/photo-1617284101128-4b2025d00c55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.box-3{
+    width: 20%;
+    min-height: 45vh;
+    
+}
+
+.up{
+    min-height: 22.5vh;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(242, 83, 24);
+    color: #ffffffe0;
+}
+.up p{
+    margin: 15px;
+}
+
+.down{
+    min-height: 22.5vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.box-4{
+    width: 30%;
+    min-height: 45vh;
+    padding: 30px;
+    background-color: rgb(61, 58, 58);
+    color: #fff;
+}
+
+.feedback{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.feedback p{
+
+    width: 85%;
+    font-size: 12px;
+}
+
+
+
+
+
+
+/* making responsive */
+
+@media (max-width : 500px) {
+    .overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .overlay #text .rightText{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .overlay #text .rightText p{
+        width: initial;
+        margin-top: 20px;
+    }
+
+    .overlay #text .rightText #icons{
+        margin-top: 30px;
+    }
+
+    #text h1{
+        font-size: 10vw;
+    }
+
+
+
+
+    .bottom{
+        flex-direction: column;
+    }
+
+    .box-1{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .box-2{
+        width: 100%;
+    }
+    .box-3{
+        width: 100%;
+    }
+
+    .box-4{
+        width: 100%;
+    }
+}
+
